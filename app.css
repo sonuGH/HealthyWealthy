@@ -1,3 +1,13 @@
+.container {
+    padding: 30px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+}
+body{
+  background: #19171a;
+}
 /* Header/logo Title */
 .header {
     padding: 20px;
@@ -10,13 +20,6 @@
   .header h1 {
     font-size: 40px;
   }
-body {
-    padding: 30px;
-    background: #19171a;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 /* Style the navigation bar */
 .navbar {
@@ -26,7 +29,7 @@ body {
   }
   
   /* Navbar links */
-  .navbar a {
+.navbar a {
     float: left;
     text-align: center;
     padding: 12px;
@@ -93,10 +96,63 @@ body {
     padding: none;
     text-align: center;
     background-color: #f1f1f1;
+    position: relative;
   }
+  
+  .card .card-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s
+}
+
+.card:hover .card-overlay {
+  opacity: 1
+}
+
+.card-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s
+}
+
+.card:hover .card-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1
+}
+
+.card-details p {
+  color: #fff;
+  font-size: 2em
+}
+
+.fadeIn-bottom {
+  top: 80%
+}
 
   /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) 
+  {
     
     .navbar .search-container {
           float: none;
@@ -123,3 +179,5 @@ body {
         width: 100%;
         height: auto;
     }
+  }
+    
