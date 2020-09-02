@@ -21,59 +21,6 @@ body{
     font-size: 40px;
   }
 
-/* Style the navigation bar */
-.navbar {
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
-  }
-  
-  /* Navbar links */
-.navbar a {
-    float: left;
-    text-align: center;
-    padding: 12px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Navbar links on mouse-over */
-  .navbar a:hover {
-    background-color: #000;
-  }
-  
-  /* Current/active navbar link */
-  .active {
-    background-color: #4CAF50;
-  }
-  
-  .navbar .search-container {
-    float: right;
-  }
-  
-  .navbar input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-  }
-
-  .navbar .search-container button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .navbar .search-container button:hover {
-    background: #ccc;
-  }
-
 /* Float four columns side by side */
 .column {
     float: left;
@@ -99,7 +46,7 @@ body{
     position: relative;
   }
   
-  .card .card-overlay {
+  .overlay {
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
     height: 99%;
@@ -114,7 +61,7 @@ body{
     transition: all 0.4s ease-in-out 0s
 }
 
-.card:hover .card-overlay {
+.card:hover .overlay {
   opacity: 1
 }
 
@@ -142,8 +89,12 @@ body{
 }
 
 .card-details p {
-  color: #fff;
+  color: #818181;
   font-size: 2em
+}
+
+.card-details p:hover, .card-details p:focus{
+  color: #f1f1f1;
 }
 
 .fadeIn-bottom {
