@@ -65,17 +65,7 @@
     .navbar .search-container button:hover {
       background: #ccc;
     }
-
-    .content{
-        color: #000;
-        background-color: #f9ede5;
-        font-size:medium;
-    }
-
-    .content h1{
-        font-size: large;
-    }
-
+    
     @media screen and (max-width: 600px) 
     {
       
@@ -95,3 +85,5 @@
         }
        
     }  
+
+    
