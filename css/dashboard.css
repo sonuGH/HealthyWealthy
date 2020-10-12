@@ -1,0 +1,26 @@
+body{
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.container {
+    padding: 15%; 
+    margin-right: auto;
+    margin-left: auto;
+}
+.flag-icon{
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+.header{
+    /* background:rgb(239, 239, 245); */
+    padding-top: 8%;
+  }
+
+.header h1{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+}

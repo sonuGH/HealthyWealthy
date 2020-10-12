@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/app.css">
-    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/app_main.css">
+    <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <!-- <script src="../js/covid_disp.js"></script>-->
-    <script src="../js/fetchVirusUpdate.js"></script>
+  
 </head>
 
 <body>
@@ -19,7 +18,7 @@
             <h1>HealthyWealthy</h1>
         </div>
         <div class="navbar">
-            <a class="active" href="../htmlFiles/index.html"><i class="fa fa-fw fa-home"></i>Home</a>
+            <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a>
             <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
             <div class="search-container">
                 <form action="/action_page.php">
@@ -28,9 +27,10 @@
                 </form>
             </div>
         </div>
-        <div class="row">
+       <div class="row">
+            <a id="covidLink" > 
             <div class="column">
-                <div class="card"><a id="covidLink">
+                <div class="card"><a href="">
                         <div class="overlay"></div>
                         <img src="../images/COVID19.jpg" class="img-responsive" alt="Pandemic_Covid19" style="width: 100%; height: 20rem">
                         <p style="font-family:American Typewriter;font-size:16px;">Covid-19</p>
@@ -52,8 +52,6 @@
                     </a>
                 </div>
             </div>
-        </div>
-
     </div>
 </body>
 

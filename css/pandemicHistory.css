@@ -1,7 +1,8 @@
 
+
 .content{
     color: #000;
-    background-color: #eeeae7;
+    background-color: #ebe7ec;
     font-size:medium;
     padding-right: 300px;
     padding-left: 100px;
@@ -15,6 +16,8 @@
     width: 200px;
     box-sizing: border-box;
     margin: auto auto; /* Vertical  Horizontal */
-  }
+  } 
 
-  
+  .header{
+      
+  }
